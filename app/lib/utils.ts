@@ -17,3 +17,7 @@ function formatReadableNumber(value: number): string {
     ? String(roundedToOneDecimal.toFixed(0))
     : String(roundedToOneDecimal.toFixed(1))
 }
+
+export function generateUUID() {
+  return crypto.randomUUID()
+}
